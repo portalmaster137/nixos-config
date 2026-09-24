@@ -23,6 +23,15 @@
     ];
   };
 
+  boot.kernelParams = [
+    "nvidia.NVreg_PreserveVideoMemoryAllocations=1"
+  ];
+
+  hardware.nvidia = {
+    modesetting.enable = true;
+    powerManagement.enable = true;
+  };
+
   imports = [
     ./hardware-configuration.nix
     ./modules/desktop.nix

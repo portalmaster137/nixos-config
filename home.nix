@@ -22,5 +22,6 @@
   home.packages = with pkgs; [
     vesktop
     nix-output-monitor
+    prismlauncher
   ];
 }
